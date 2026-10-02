@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch họp công ty</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            color: #24344d;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f6fa;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 34px;
+            background-color: white;
+            border-radius: 14px;
+            box-shadow: 0 14px 40px rgba(36, 52, 77, 0.12);
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #174f87;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 650px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 14px 16px;
+            border: 1px solid #b9c8d8;
+        }
+
+        th {
+            color: white;
+            text-align: left;
+            background-color: #174f87;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #eef5fb;
+        }
+
+        td[rowspan] {
+            color: #174f87;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            background-color: #e2effb;
+        }
+
+        td[colspan] {
+            color: #713b00;
+            font-weight: bold;
+            background-color: #fff2d9;
+        }
+
+        .note {
+            margin-bottom: 22px;
+            color: #63758a;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Lịch họp công ty</h1>
+        <p class="note">Lịch làm việc và các cuộc họp quan trọng trong tuần.</p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngày</th>
+                        <th>Giờ</th>
+                        <th>Nội dung cuộc họp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">08/10/2026</td>
+                        <td>08:00 - 09:00</td>
+                        <td>Họp kế hoạch công việc đầu tuần</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 11:00</td>
+                        <td>Trao đổi tiến độ dự án website</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">13:00 - 16:00: Workshop đào tạo kỹ năng làm việc nhóm</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">09/10/2026</td>
+                        <td>09:00 - 10:00</td>
+                        <td>Họp với khách hàng</td>
+                    </tr>
+                    <tr>
+                        <td>14:00 - 15:00</td>
+                        <td>Review và phân công Task</td>
+                    </tr>
+                    <tr>
+                        <td>10/10/2026</td>
+                        <td>15:30 - 16:30</td>
+                        <td>Tổng kết công việc cuối tuần</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
